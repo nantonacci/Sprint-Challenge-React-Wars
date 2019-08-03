@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Card, Data, Span } from './Styles.js';
+import { Card, Data, Span } from './Styles.js';
 
 function Characters({ char }) {
   return (
