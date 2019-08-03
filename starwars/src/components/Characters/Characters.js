@@ -1,14 +1,28 @@
 import React from 'react';
+import { Container, Card, Data, Span } from './Styles.js';
 
 function Characters({ char }) {
   return (
-    <div>
-      <h3>Name: {char.name}</h3>
-      <h3>Birth Year: {char.birth_year}</h3>
-      <h3>Hair Color: {char.hair_color}</h3>
-      <h3>Eye Color: {char.eye_color}</h3>
-      <h3>Height: {char.height}</h3>
-    </div>
+    <Card>
+      <Data>
+        Name: <Span>{char.name}</Span>
+      </Data>
+      <Data>
+        Birth Year: <Span>{char.birth_year}</Span>
+      </Data>
+      <Data>
+        Hair Color: <Span>{char.hair_color}</Span>
+      </Data>
+      <Data>
+        Eye Color: <Span>{char.eye_color}</Span>
+      </Data>
+      <Data>
+        Height: <Span>{char.height}cm</Span>
+      </Data>
+      <Data>
+        Mass: <Span>{char.mass}kg</Span>
+      </Data>
+    </Card>
   );
 }
 
